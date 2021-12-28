@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.1.1 (2021-12-28)
+
+
+### Bug Fixes
+
+* syn error ([3da1975](https://github.com/daichangxin/js.layabox-core/commit/3da19754a4c28b525b3355530056e0111527a9e9))
+
 ## 1.1.0 (2021-12-28)
 
 

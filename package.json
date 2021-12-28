@@ -1,6 +1,6 @@
 {
   "name": "@pawgame/js-layabox-core",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "index.js",
   "module": "lib/index.js",
