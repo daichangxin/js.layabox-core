@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "target": "es6",
+        "skipLibCheck": true,
+        "declaration": true,
+        "sourceMap": true,
+        "removeComments": false,
+        "lib": ["ESNext", "DOM"]
+    },
+    "include": ["src", "libs"]
+}
