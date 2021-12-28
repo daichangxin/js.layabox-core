@@ -1,5 +1,4 @@
 name: publish npm package
-
 on:
     push:
         branches: [master, main]
