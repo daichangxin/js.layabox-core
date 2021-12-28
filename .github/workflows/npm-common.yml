@@ -9,40 +9,32 @@ on:
             - master
 
 jobs:
-    setup:
+    auto_release_npm_package:
         if: "!contains(github.event.head_commit.message, 'skip ci')"
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-node@v1
-              with:
-                  node-version: 12
-            - run: |
+            - name: setup
+                uses: actions/checkout@v2
+                uses: actions/setup-node@v1
+                with:
+                    node-version: 12
+                run: |
                   git config --local user.email "action@github.com"
                   git config --local user.name "GitHub Action"
                   git checkout $CI_COMMIT_REF_NAME
                   npm ci
-    build:
-        needs: setup
-        runs-on: ubuntu-latest
-        steps:
-            - run: |
+            - name: build
+                run: |
                   npm run build --if-present
-    test:
-        needs: setup
-        runs-on: ubuntu-latest
-        steps:
-            - run: |
+            - name: test
+                run: |
                   npm run test --if-present
-    publish:
-        needs: [build, test]
-        runs-on: ubuntu-latest
-        steps:
-            - run: |
+            - name: publish
+                run: |
                   npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
                   SPACE_CHAR=" "
                   npx standard-version --releaseCommitMessageFormat "chore(release):${SPACE_CHAR}{{currentTag}} [skip ci]"
                   git push --follow-tags origin $CI_COMMIT_REF_NAME
                   npm publish --access public
-              env:
+                env:
                   NODE_AUTH_TOKEN: ${{secrets.NODE_AUTH_TOKEN}}
