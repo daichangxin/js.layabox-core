@@ -3,6 +3,6 @@ name: publish npm package
 on:
     push:
         branches: [master, main]
-
-include:
-    remote: 'https://raw.githubusercontent.com/daichangxin/github-config/master/github-ci/auto_release_npm_package.yml'
+jobs:
+    auto_release_npm_package:
+        uses: https://raw.githubusercontent.com/daichangxin/github-config/master/github-ci/auto_release_npm_package.yml
