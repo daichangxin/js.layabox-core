@@ -2,6 +2,7 @@ name: publish npm package
 on:
     push:
         branches: [master, main]
+
 jobs:
     auto_release_npm_package:
         uses: daichangxin/github-config/.github/workflows/auto_release_npm_package.yml@master
