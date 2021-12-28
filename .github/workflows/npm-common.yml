@@ -14,27 +14,27 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: setup
-                uses: actions/checkout@v2
-                uses: actions/setup-node@v1
-                with:
-                    node-version: 12
-                run: |
-                  git config --local user.email "action@github.com"
-                  git config --local user.name "GitHub Action"
-                  git checkout $CI_COMMIT_REF_NAME
-                  npm ci
+              uses: actions/checkout@v2
+              uses: actions/setup-node@v1
+              with:
+                node-version: 12
+              run: |
+                git config --local user.email "action@github.com"
+                git config --local user.name "GitHub Action"
+                git checkout $CI_COMMIT_REF_NAME
+                npm ci
             - name: build
-                run: |
-                  npm run build --if-present
+              run: |
+                npm run build --if-present
             - name: test
-                run: |
-                  npm run test --if-present
+              run: |
+                npm run test --if-present
             - name: publish
-                run: |
-                  npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
-                  SPACE_CHAR=" "
-                  npx standard-version --releaseCommitMessageFormat "chore(release):${SPACE_CHAR}{{currentTag}} [skip ci]"
-                  git push --follow-tags origin $CI_COMMIT_REF_NAME
-                  npm publish --access public
-                env:
-                  NODE_AUTH_TOKEN: ${{secrets.NODE_AUTH_TOKEN}}
+              run: |
+                npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
+                SPACE_CHAR=" "
+                npx standard-version --releaseCommitMessageFormat "chore(release):${SPACE_CHAR}{{currentTag}} [skip ci]"
+                git push --follow-tags origin $CI_COMMIT_REF_NAME
+                npm publish --access public
+              env:
+                NODE_AUTH_TOKEN: ${{secrets.NODE_AUTH_TOKEN}}
