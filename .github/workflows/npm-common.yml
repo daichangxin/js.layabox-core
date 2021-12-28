@@ -1,1 +1,2 @@
-include: 'https://raw.githubusercontent.com/daichangxin/github-config/master/github-ci/auto_release_npm_package.yml'
+include:
+    remote: 'https://raw.githubusercontent.com/daichangxin/github-config/master/github-ci/auto_release_npm_package.yml'
