@@ -5,4 +5,4 @@ on:
         branches: [master, main]
 jobs:
     auto_release_npm_package:
-        uses: https://raw.githubusercontent.com/daichangxin/github-config/master/github-ci/auto_release_npm_package.yml
+        uses: daichangxin/github-config/github-ci/auto_release_npm_package.yml@master
