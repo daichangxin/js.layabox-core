@@ -5,3 +5,4 @@ on:
 jobs:
     auto_release_npm_package:
         uses: daichangxin/github-config/.github/workflows/auto_release_npm_package.yml@master
+        secrets: NPM_AUTH_TOKEN:${{ secrets.NPM_AUTH_TOKEN }}
