@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.2.0 (2021-12-28)
+
+
+### Features
+
+* filter skip ([edf6b15](https://github.com/daichangxin/js.layabox-core/commit/edf6b150648bb8393a45d9a8c81d7e3d9d32efbc))
+
 ### 1.1.1 (2021-12-28)
 
 
