@@ -7,3 +7,7 @@
 ## 使用说明
 
 LayaBox 核心库，魔改了一些内容，支持嵌入 React 项目。
+
+```bash
+npm i @pawgame/layabox-core
+```
