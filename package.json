@@ -6,9 +6,7 @@
   "module": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "clean": "del-cli lib",
-    "build": "npm run clean && npm run compile",
-    "compile": "tsc --outDir lib -d",
+    "build": "rm -rf lib && tsc",
     "test": "echo \"no test specified\""
   },
   "repository": {
@@ -22,7 +20,6 @@
   },
   "homepage": "https://github.com/daichangxin/js.layabox-core#readme",
   "devDependencies": {
-    "del-cli": "^4.0.1",
     "typescript": "^4.5.4"
   }
 }
