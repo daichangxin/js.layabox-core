@@ -8,6 +8,9 @@
 
 LayaBox 核心库，魔改了一些内容，支持嵌入 React 项目。
 
+这里有介绍：
+https://blog.pawgame.com/2020/09/21/react-and-layabox/
+
 ```bash
 npm i @pawgame/layabox-core
 ```
