@@ -5,6 +5,10 @@
   "main": "index.js",
   "module": "lib/index.js",
   "types": "lib/index.d.ts",
+  "files": [
+    "lib/",
+    "libs/"
+  ],
   "scripts": {
     "build": "rm -rf lib && tsc",
     "test": "echo \"no test specified\""
