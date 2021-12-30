@@ -1,7 +1,7 @@
 # js.layabox-core
 
 <p>
-    <a href="https://www.npmjs.com/package/@pawgame/js-layabox-core"><img src="https://img.shields.io/npm/v/@pawgame/js-layabox-core.svg?style=flat-square&colorB=51C838"
+    <a href="https://www.npmjs.com/package/@pawgame/layabox-core"><img src="https://img.shields.io/npm/v/@pawgame/layabox-core.svg?style=flat-square&colorB=51C838"
                                                        alt="npm version"></a>
 
 ## 使用说明
