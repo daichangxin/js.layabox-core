@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.3.0 (2021-12-30)
+
+
+### Features
+
+* remove useless lib ([afefd10](https://github.com/daichangxin/js.layabox-core/commit/afefd107667605196cf1a4c85fd6673c012b60c9))
+
 ### 1.2.1 (2021-12-28)
 
 ## 1.2.0 (2021-12-28)
