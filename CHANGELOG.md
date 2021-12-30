@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.4.0 (2021-12-30)
+
+
+### Features
+
+* simply outputs ([d9452a5](https://github.com/daichangxin/js.layabox-core/commit/d9452a543a7bc7ce5228b728d860bd6ac11cb9e2))
+
 ## 1.3.0 (2021-12-30)
 
 
